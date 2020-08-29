@@ -2,12 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import manageMusicStores from './reducers/manageMusicStores'
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 
+let store = createStore(manageMusicStores)
+
 ReactDOM.render(
-  <Provider>
+  <Provider store={store}>
     <App />
   </Provider>,
   document.getElementById('root')
