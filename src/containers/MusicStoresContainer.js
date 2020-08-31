@@ -1,21 +1,20 @@
 import React, { Component } from 'react'
-import { MusicStores } from '../components/MusicStores'
-import { MusicStoreInput } from '../components/MusicStoreInput'
+//import MusicStores from '../components/MusicStores'
+import MusicStoreInput from '../components/MusicStoreInput'
 import { connect } from 'react-redux'
 
 class MusicStoresContainer extends Component {
   render() {
     return (
       <div>
-        <MusicStoreInput addMusicStore={addMusicStore}/>
-        <MusicStores/>
+        <MusicStoreInput addMusicStore={this.addMusicStore}/>
       </div>
     )
   }
 }
 
 const mapStateToProps = state => (
-  {musicStores: musicStores}
+  {musicStores: state.musicStores}
 )
 
 const mapDispatchToProps = dispatch => ({
