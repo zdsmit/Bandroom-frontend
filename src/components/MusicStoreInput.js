@@ -1,5 +1,11 @@
 import React from 'react'
 
-export default function MusicStoreInput() {
-  
+const MusicStoreInput = (props) => {
+  return (
+    <div>
+        
+    </div>
+  )
 }
+
+export default MusicStoreInput
