@@ -9,12 +9,12 @@ export default function ManageMusicStores(state={ musicStores: [], instruments: 
       ...state,
       musicStores: [...state.musicStores],
       loading: true
-    }
+     }
     case 'ADD_MUSIC_STORES':
       return {
-         ...state,
-         musicStores: action.musicStores,
-         loading: false
+       ...state,
+       musicStores: action.musicStores,
+       loading: false
       }
     default:
      return state
