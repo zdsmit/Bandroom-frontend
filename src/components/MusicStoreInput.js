@@ -12,9 +12,9 @@ const MusicStoreInput = (props) => {
     <div>
       {/* input form contains inputs for all fields specified in the backend database's "stores" table (except instruments, which is handled separately on the frontend side) */}
       <form onSubmit={event => handleOnSubmit(event)}>
-        <input type="text" placeholder="Store's Name"/>
-        <input type="text" placeholder="Owner's Name"/>
-        <input type="text" placeholder="Store's Location"/>
+        <input type="text" placeholder="Store's Name"/><br/>
+        <input type="text" placeholder="Owner's Name"/><br/>
+        <input type="text" placeholder="Store's Location"/><br/>
         <input type="submit" value="submit"/>
       </form>
     </div>
