@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import MusicStoreInput from '../components/MusicStoreInput'
 import { connect } from 'react-redux'
 
+//this container renders two components: one for inputting a new music store, and another to display a list of all existing music stores
 class MusicStoresContainer extends Component {
   render() {
     return (
