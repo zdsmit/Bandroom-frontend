@@ -5,9 +5,10 @@ import App from './App';
 import manageMusicStores from './reducers/manageMusicStores'
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux'
-import { createStore } from 'redux'
+import { createStore, applyMiddleware } from 'redux'
+import thunk from 'redux-thunk';
 
-let store = createStore(manageMusicStores)
+let store = createStore(manageMusicStores, applyMiddleware(thunk))
 
 ReactDOM.render(
   <Provider store={store}>
