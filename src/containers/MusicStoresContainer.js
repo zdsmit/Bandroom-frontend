@@ -22,7 +22,7 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-  addMusicStore: text => dispatch({type: 'ADD_MUSIC_STORE', text})
+  addMusicStore: text => dispatch({type: 'ADD_MUSIC_STORES', text})
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(MusicStoresContainer)
