@@ -5,7 +5,7 @@ class MusicStoreInput extends Component {
   //on submitting the form, addMusicStore, passed down as a prop from the container, is used to send an 'add' action to the reducer
   handleOnSubmit = event => {
     event.preventDefault()
-    props.addMusicStore(event.target.value)
+    this.props.addMusicStore(event.target.value)
   }
   
   render() {

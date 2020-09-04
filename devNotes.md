@@ -17,3 +17,11 @@
   -It is not yet successfully saving items to the server
   -Need to make sure data being sent matches params needed to save into database
   -Consider using console.log to examine the data being sent in the POST request
+
+9/4 12:28 PM
+  -Spent most of the morning switching over database from SQLite to PostgreSQL
+  -Changed the music store input form into a class component
+  -I think doing this and saving the music store's attributes into the class' internal state will be the key to saving them into the database successfully
+  -I believe the problem is happening in one of a few places:
+    1. The container's dispatched addStore method: is more than 'text' needed?
+    2. The input form: saving them to state could possible be the answer
