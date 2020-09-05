@@ -1,12 +1,12 @@
-export const fetchMusicStores = () => {
+export const addMusicStores = () => {
     return (dispatch) => {
-      dispatch({type: 'LOADING_MUSIC_STORES'})
+      console.log(dispatch)
       fetch('http://localhost:3000', {
         method: 'POST', 
         headers: {
           'Content-Type': 'application/json'
         },
-       body: JSON.stringify(data)
+        body: JSON.stringify(dispatch)
       })
       .then(response => response.json())
       .then(responseJSON => {
@@ -15,3 +15,4 @@ export const fetchMusicStores = () => {
       })
     }
 }
+

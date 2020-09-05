@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 //import MusicStores from '../components/MusicStores'
 import MusicStoreInput from '../components/MusicStoreInput'
+import { addMusicStores } from '../actions/addMusicStores'
 import { connect } from 'react-redux'
 
 //this container renders two components: one for inputting a new music store, and another to display a list of all existing music stores
@@ -28,4 +29,4 @@ const mapDispatchToProps = dispatch => ({
   }
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(MusicStoresContainer)
+export default connect(mapStateToProps, { addMusicStores })(MusicStoresContainer)
