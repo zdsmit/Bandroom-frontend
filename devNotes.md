@@ -25,3 +25,10 @@
   -I believe the problem is happening in one of a few places:
     1. The container's dispatched addStore method: is more than 'text' needed?
     2. The input form: saving them to state could possible be the answer
+
+9/5 1:10 PM
+  -Established create route in stores controller on backend
+  -Made some adjustments to addMusicStores action file
+  -imported actions file in music stores container, replaced mapDispatchToProps with it
+  -this is creating problems with input form, which is still using now nonexistent dispatch prop
+  -can I use the addMusicStores action directly from the input form?
