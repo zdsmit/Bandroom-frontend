@@ -12,5 +12,6 @@ export const fetchMusicStores = () => {
       .then(responseJSON => {
         dispatch({type: 'ADD_MUSIC_STORES', musicStores: responseJSON})
       })
+      .then(data => console.log(data))
     }
 }

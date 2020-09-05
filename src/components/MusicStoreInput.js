@@ -1,6 +1,17 @@
 import React, { Component } from 'react'
 
 class MusicStoreInput extends Component {
+
+  constructor() {
+    super()
+    this.state = {
+      musicStore: {
+
+      }
+    }
+  }
+
+  handleNameChange = 
   
   //on submitting the form, addMusicStore, passed down as a prop from the container, is used to send an 'add' action to the reducer
   handleOnSubmit = event => {
