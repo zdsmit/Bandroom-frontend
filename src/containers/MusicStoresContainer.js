@@ -10,7 +10,7 @@ class MusicStoresContainer extends Component {
     console.log(this.props.musicStores)
     return (
       <div>
-        <MusicStoreInput addMusicStore={this.addMusicStore}/>
+        <MusicStoreInput addMusicStore={this.props.addMusicStore}/>
       </div>
     )
   }
@@ -22,7 +22,10 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-  addMusicStore: text => dispatch({type: 'ADD_MUSIC_STORES', text})
+  addMusicStore: contents => {
+    console.log(contents)
+    dispatch({type: 'ADD_MUSIC_STORES', contents})
+  }
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(MusicStoresContainer)

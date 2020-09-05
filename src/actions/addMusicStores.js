@@ -10,8 +10,8 @@ export const fetchMusicStores = () => {
       })
       .then(response => response.json())
       .then(responseJSON => {
+        console.log(responseJSON)
         dispatch({type: 'ADD_MUSIC_STORES', musicStores: responseJSON})
       })
-      .then(data => console.log(data))
     }
 }
