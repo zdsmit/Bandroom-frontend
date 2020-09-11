@@ -11,7 +11,7 @@ class MusicStoresContainer extends Component {
     console.log(this.props.musicStores)
     return (
       <div>
-        <MusicStoreInput addMusicStore={this.props.addMusicStore}/>
+        <MusicStoreInput addMusicStores={this.props.addMusicStores}/>
       </div>
     )
   }
