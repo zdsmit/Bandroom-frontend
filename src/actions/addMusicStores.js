@@ -1,17 +1,21 @@
-export const addMusicStores = () => {
-  return (dispatch) => {
+export const addMusicStores = (dispatch) => {
+  return () => {
     console.log(dispatch)
-    fetch('http://localhost:3000', {
+    fetch('http://127.0.0.1:3000/stores', {
       method: 'POST', 
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
       },
-      body: JSON.stringify(dispatch)
+      body: JSON.stringify({
+        name: dispatch.name,
+        owner: dispatch.owner,
+        location: dispatch.location
+      })
     })
     .then(response => response.json())
     .then(responseJSON => {
       console.log(responseJSON)
-      dispatch({type: 'ADD_MUSIC_STORES', musicStores: responseJSON})
     })
   }
 }
