@@ -5,9 +5,11 @@ export const getMusicStores = () => {
       return response.json()
     }).then(responseJSON => {
       let attributes = []
-      responseJSON.data.map(store => attributes.push(store.attributes))
+      responseJSON.data.map(store => (
+        attributes.push(store.attributes),
+        attributes.push(store.id)
+        ))
       dispatch({type: 'GET_MUSIC_STORES', musicStores: attributes})
-      console.log(responseJSON.data[0])
     })
   }
 }
