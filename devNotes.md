@@ -32,3 +32,7 @@
   -imported actions file in music stores container, replaced mapDispatchToProps with it
   -this is creating problems with input form, which is still using now nonexistent dispatch prop
   -can I use the addMusicStores action directly from the input form?
+
+9/15 3:17 PM
+  -Trying to use fetch to get database items from the server to render them to the page
+  -Need to tweak the fetch call in getMusicStores file

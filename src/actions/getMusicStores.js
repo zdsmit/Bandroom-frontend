@@ -4,8 +4,10 @@ export const getMusicStores = () => {
     fetch('http://127.0.0.1:3000/stores').then(response => {
       return response.json()
     }).then(responseJSON => {
-      //dispatch({type: 'GET_MUSIC_STORES', musicStores: responseJSON.text})
-      console.log(responseJSON)
+      let attributes = []
+      responseJSON.data.map(store => attributes.push(store.attributes))
+      dispatch({type: 'GET_MUSIC_STORES', musicStores: attributes})
+      console.log(responseJSON.data[0])
     })
   }
 }
