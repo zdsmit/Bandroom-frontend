@@ -3,8 +3,11 @@ import React from 'react'
 const MusicStore = props => {
   
     return(
-      <div>
-        <li>{props.name}</li>
+      <div className="storeInfo">
+        <li><b>{props.name}</b></li>
+        <li>Owner: {props.owner}</li>
+        <li>Location: {props.location}</li>
+        <br />
       </div>
     );
 

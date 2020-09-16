@@ -6,6 +6,7 @@ const MusicStores = props => {
 
   return (
     <div>
+      <h2>Music Stores</h2>
       {musicStores}
     </div>
   )

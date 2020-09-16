@@ -42,7 +42,7 @@ class MusicStoreInput extends Component {
   
   render() {
     return (
-      <div className="inputForm">
+      <div className="storeInfo">
         <h3>Create a new music store!</h3>
         {/* input form contains inputs for all fields specified in the backend database's "stores" table (except instruments, which is handled separately on the frontend side) */}
         <form onSubmit={event => this.handleOnSubmit(event)}>

@@ -17,6 +17,8 @@ class MusicStoresContainer extends Component {
     return (
       <div>
         <MusicStoreInput addMusicStores={this.props.addMusicStores}/>
+        <br />
+        <br />
         <MusicStores musicStores={this.props.musicStores}/>
       </div>
     )

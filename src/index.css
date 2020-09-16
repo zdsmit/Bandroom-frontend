@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  float: left;
 }
 
 code {
@@ -12,6 +13,12 @@ code {
     monospace;
 }
 
-.inputForm {
-  float: left;
+div {
+  white-space: pre-wrap;
+} 
+
+
+.storeInfo {
+  position: flex;
+  left: 0; right: 0; bottom: 0; top: 0;
 }
