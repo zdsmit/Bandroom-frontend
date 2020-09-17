@@ -61,3 +61,5 @@
   -Deleting store from list now causes page to reload with updated information
   -Did this by wrapping the delete button in a form tag and using the submit button's default behavior
   -May need to streamline this process in the future
+  -Next to do: start building instrument resource as child of music store
+  -Might want to consider making separate table for instruments on the backend as well
