@@ -63,3 +63,8 @@
   -May need to streamline this process in the future
   -Next to do: start building instrument resource as child of music store
   -Might want to consider making separate table for instruments on the backend as well
+
+9/17 6:13 PM
+  -Created an instrument resource in backend database
+  -Made all the needed files for it on the frontend, though most are empty
+  -Should function about the same as the music store resources
