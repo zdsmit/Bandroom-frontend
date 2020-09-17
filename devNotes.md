@@ -37,7 +37,7 @@
   -Trying to use fetch to get database items from the server to render them to the page
   -Need to tweak the fetch call in getMusicStores file
 
-9/16  11:38 AM
+9/16 11:38 AM
   -Page now successfully fetches data from server and renders the list correctly on the page
   -Need to make it so the GET fetch action occurs on submission of form, rather than having to reload page first
   -Need to create edit and delete functions for music stores (start with delete)

@@ -17,10 +17,10 @@ class MusicStoresContainer extends Component {
     console.log(this.props.musicStores)
     return (
       <div>
-        <MusicStoreInput addMusicStores={this.props.addMusicStores}/>
+        <MusicStoreInput addMusicStores={this.props.addMusicStores} getMusicStores={this.props.getMusicStores}/>
         <br />
         <br />
-        <MusicStores musicStores={this.props.musicStores} deleteMusicStore = {this.props.deleteMusicStores}/>
+        <MusicStores musicStores={this.props.musicStores} deleteMusicStore={this.props.deleteMusicStores} getMusicStores={this.props.getMusicStores}/>
       </div>
     )
   }

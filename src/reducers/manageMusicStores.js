@@ -16,6 +16,10 @@ export default function ManageMusicStores(state={ musicStores: [], instruments: 
        musicStores: action.musicStores,
        loading: false
     }
+    case 'DELETE_MUSIC_STORE':
+      return {
+        musicStores: state.musicStores.filter(musicStore => musicStore.id !== action.id)
+      }
     default:
      return state
    }
