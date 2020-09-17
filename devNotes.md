@@ -46,3 +46,8 @@
   -Working on delete button for each rendered music store
   -Getting strange console log output
   -Look into how the id is getting brought in from the database
+
+9/17 12:29 PM
+  -Create, get, and destroy functions now work as needed
+  -Have to refresh page to show changes
+  -Need to adjust them so that DOM updates immediately on interaction with database

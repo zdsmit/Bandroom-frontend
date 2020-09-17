@@ -3,8 +3,8 @@ import React from 'react'
 const MusicStore = props => {
   console.log(props)
 
-  handleOnClick = () => {
-    
+  const handleOnClick = () => {
+    props.deleteMusicStore(props.id)
   }
   
   return(
@@ -13,7 +13,7 @@ const MusicStore = props => {
       <li>Owner: {props.owner}</li>
       <li>Location: {props.location}</li>
       <br />
-      <button >Delete this store</button>
+      <button onClick={handleOnClick}>Delete this store</button>
     </div>
   );
 
