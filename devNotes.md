@@ -51,3 +51,13 @@
   -Create, get, and destroy functions now work as needed
   -Have to refresh page to show changes
   -Need to adjust them so that DOM updates immediately on interaction with database
+
+9/17 12:59 PM
+  -Add function refreshes rendered list now
+  -Need delete function to do the same
+  -Tried to accomplish this by dispatching a delete action to the reducer, but got an error 'dispatch is not defined'
+
+9/17 5:30 PM
+  -Deleting store from list now causes page to reload with updated information
+  -Did this by wrapping the delete button in a form tag and using the submit button's default behavior
+  -May need to streamline this process in the future

@@ -3,7 +3,7 @@ import React from 'react'
 const MusicStore = props => {
   console.log(props)
 
-  const handleOnClick = () => {
+  const handleOnSubmit = () => {
     props.deleteMusicStore(props.id)
   }
   
@@ -13,7 +13,9 @@ const MusicStore = props => {
       <li>Owner: {props.owner}</li>
       <li>Location: {props.location}</li>
       <br />
-      <button onClick={handleOnClick}>Delete this store</button>
+      <form onSubmit={() => handleOnSubmit()}>
+        <input type="submit" value="Delete this store" />
+      </form>
     </div>
   );
 
