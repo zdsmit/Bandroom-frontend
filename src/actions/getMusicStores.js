@@ -5,6 +5,7 @@ export const getMusicStores = () => {
     fetch('http://127.0.0.1:3000/stores').then(response => {
       return response.json()
     }).then(responseJSON => {
+      console.log(responseJSON)
       responseJSON.data.map(store => (
         attributes.push(store.attributes)
         ))
