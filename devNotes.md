@@ -68,3 +68,7 @@
   -Created an instrument resource in backend database
   -Made all the needed files for it on the frontend, though most are empty
   -Should function about the same as the music store resources
+
+9/20 11:28 AM
+  -Instrument input form now successfully saves a new instrument to the database with correct id numbers
+  -Next, need to implement the action and components to retrieve instruments from database and render them on page under their parent store

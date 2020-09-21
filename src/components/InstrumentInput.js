@@ -16,7 +16,7 @@ class InstrumentInput extends Component {
     })
   }
   
-  //on submitting the form, addMusicStore, passed down as a prop from the container, is used to send an 'add' action to the reducer
+  //on submitting the form, addInstrument, passed down as a prop from the container, is used to send an 'add' action to the reducer
   handleOnSubmit = () => {
     this.props.addInstruments(this.state)
     this.setState ({

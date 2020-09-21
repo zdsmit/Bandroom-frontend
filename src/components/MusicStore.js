@@ -2,7 +2,6 @@ import React from 'react'
 import InstrumentsContainer from '../containers/InstrumentsContainer'
 
 const MusicStore = props => {
-  console.log(props)
 
   const handleOnSubmit = () => {
     props.deleteMusicStore(props.id)

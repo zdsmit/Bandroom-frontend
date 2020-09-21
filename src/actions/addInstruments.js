@@ -7,7 +7,7 @@ export const addInstruments = (dispatch) => {
           'Accept': 'application/json'
         },
         body: JSON.stringify({
-          type: dispatch.type,
+          instrument_type: dispatch.type,
           store_id: dispatch.storeId
         })
       })
