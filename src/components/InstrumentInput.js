@@ -6,7 +6,8 @@ class InstrumentInput extends Component {
     super()
     this.state = {
       type: '',
-      storeId: props.storeId
+      storeId: props.storeId,
+      renderForm: false
     }
   }
 
@@ -23,19 +24,34 @@ class InstrumentInput extends Component {
       type: ''
     })
   }
+
+  handleOnClick = () => {
+    this.setState({renderForm: true})
+  }
   
   render() {
-    return (
-      <div className="storeInfo">
-        <h4>Add an instrument to this store's inventory!</h4>
-        {/* input form contains inputs for fields specified in the backend database's "instruments" table */}
-        <form onSubmit={event => this.handleOnSubmit(event)}>
-          <input type="text" placeholder="Type of Instrument" onChange={this.handleTypeChange}/><br/>
-          <input type="submit" value="submit"/>
-        </form>
-      </div>
-    )
+    if (this.state.renderForm === false){
+      return (
+        <div className="storeInfo">
+          <button onClick={() => this.handleOnClick()}>Add an instrument to this store's inventory!</button>
+        </div>
+      )
+    }
+    else if (this.state.renderForm === true) {
+      {/* input form contains inputs for fields specified in the backend database's "instruments" table */}
+      return (
+        <div className="storeInfo">
+          <form onSubmit={event => this.handleOnSubmit(event)}>
+            <input type="text" placeholder="Type of Instrument" onChange={this.handleTypeChange}/><br/>
+            <input type="submit" value="submit"/>
+          </form>
+        </div>
+      )
+    }
+    
   }
 }
+
+
 
 export default InstrumentInput

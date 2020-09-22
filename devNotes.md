@@ -80,3 +80,7 @@
     -prompt to add an instrument is too large
     -need more space between music stores
     -need something to differentiate different music stores from each other
+
+9/22 11:21 AM
+  -Delete now works for instruments
+  -Now need to work on formatting issues mentioned above

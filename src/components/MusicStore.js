@@ -18,6 +18,8 @@ const MusicStore = props => {
       <form onSubmit={() => handleOnSubmit()}>
         <input type="submit" value="Delete this store" />
       </form>
+      <br />
+      <br />
     </div>
   );
 
