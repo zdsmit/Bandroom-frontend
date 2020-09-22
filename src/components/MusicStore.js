@@ -9,7 +9,7 @@ const MusicStore = props => {
   
   return(
     <div className="storeInfo">
-      <li><b>{props.name}</b></li>
+      <li className="storeName"><b>{props.name}</b></li>
       <li>Owner: {props.owner}</li>
       <li>Location: {props.location}</li>
       <li>Instruments in stock:</li>
