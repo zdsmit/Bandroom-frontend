@@ -4,6 +4,7 @@ import InstrumentInput from '../components/InstrumentInput'
 import Instruments from '../components/Instruments'
 import { addInstruments } from '../actions/addInstruments'
 import { getInstruments } from '../actions/getInstruments'
+import { deleteInstruments } from '../actions/deleteInstruments'
 
 class InstrumentsContainer extends Component {
 
@@ -14,7 +15,7 @@ class InstrumentsContainer extends Component {
   render() {
     return (
       <div>
-        <Instruments storeId={this.props.storeId} instruments={this.props.instruments}/>
+        <Instruments storeId={this.props.storeId} instruments={this.props.instruments} deleteInstruments={this.props.deleteInstruments}/>
         <br />
         <InstrumentInput storeId={this.props.storeId} addInstruments={this.props.addInstruments}/>
       </div>
@@ -28,4 +29,4 @@ const mapStateToProps = state => ({
   loading: state.loading
 })
 
-export default connect(mapStateToProps, { addInstruments, getInstruments })(InstrumentsContainer)
+export default connect(mapStateToProps, { addInstruments, getInstruments, deleteInstruments })(InstrumentsContainer)

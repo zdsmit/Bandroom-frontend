@@ -72,3 +72,11 @@
 9/20 11:28 AM
   -Instrument input form now successfully saves a new instrument to the database with correct id numbers
   -Next, need to implement the action and components to retrieve instruments from database and render them on page under their parent store
+
+9/21 12:16 PM
+  -Can now successfully render a store's instruments on page as a nested list
+  -Next task is setting up delete route
+  -After setting up delete, will need to fix formatting
+    -prompt to add an instrument is too large
+    -need more space between music stores
+    -need something to differentiate different music stores from each other
