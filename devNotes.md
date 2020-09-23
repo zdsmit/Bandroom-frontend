@@ -84,3 +84,6 @@
 9/22 11:21 AM
   -Delete now works for instruments
   -Now need to work on formatting issues mentioned above
+
+9/23 11:44 AM
+  -Project should be ready for Learn assessment
