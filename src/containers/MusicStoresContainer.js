@@ -14,13 +14,12 @@ class MusicStoresContainer extends Component {
   }
   
   render() {
-    console.log(this.props.musicStores)
     return (
       <div>
         <MusicStoreInput addMusicStores={this.props.addMusicStores} getMusicStores={this.props.getMusicStores}/>
         <br />
         <br />
-        <MusicStores musicStores={this.props.musicStores} deleteMusicStore={this.props.deleteMusicStores} getMusicStores={this.props.getMusicStores}/>
+        <MusicStores musicStores={this.props.musicStores} deleteMusicStore={this.props.deleteMusicStores} />
       </div>
     )
   }

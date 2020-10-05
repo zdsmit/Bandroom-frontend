@@ -1,4 +1,13 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Bandroom! This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+This is an app that allows users to find music stores near them, and see a current list of instruments they have in stock.
+
+To use this app, you must clone this repository, as well as the repository for the backend Rails server (Ruby On Rails must be installed on your system). This respository can be found at https://github.com/zdsmit/Bandroom-backend.
+
+Once both have been cloned down, type 'rails db:migrate' in the console on the backend to create the database. Then, type 'rails s' to run the server. Once that's done, all you need to do is go to the frontend in your console and type 'npm start'. This should launch the development version of the app in your default browser.
+
+
+
 
 ## Available Scripts
 
