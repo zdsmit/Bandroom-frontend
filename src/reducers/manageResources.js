@@ -29,6 +29,11 @@ export default function ManageResources(state={ musicStores: [], instruments: []
          ...state,
          musicStores: state.musicStores.filter(musicStore => musicStore.id !== action.id)
        }
+     case 'DELETE_INSTRUMENT':
+       return {
+         ...state,
+         instruments: state.instruments.filter(instrument => instrument.id !== action.id)
+       }
      default:
       return state
    }
