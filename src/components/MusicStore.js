@@ -3,7 +3,7 @@ import InstrumentsContainer from '../containers/InstrumentsContainer'
 
 const MusicStore = props => {
 
-  const handleOnSubmit = () => {
+  const handleOnClick = () => {
     props.deleteMusicStore(props.id)
   }
   
@@ -15,9 +15,7 @@ const MusicStore = props => {
       <li>Instruments in stock: </li>
       <InstrumentsContainer storeId={props.id}/>
       <br />
-      <form onSubmit={() => handleOnSubmit()}>
-        <input type="submit" value="Delete this store" />
-      </form>
+      <button type="submit" onClick={handleOnClick}>Delete This Store</button>
       <br />
       <br />
     </div>
