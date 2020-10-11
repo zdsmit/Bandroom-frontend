@@ -24,15 +24,23 @@ export default function ManageResources(state={ musicStores: [], instruments: []
          instruments: action.instruments,
          loading: false
        }
+     case 'ADD_MUSIC_STORES':
+       return {
+         ...state,
+         musicStores: [...state.musicStores, action.musicStore],
+         loading: false
+       }
      case 'DELETE_MUSIC_STORE':
        return {
          ...state,
-         musicStores: state.musicStores.filter(musicStore => musicStore.id !== action.id)
+         musicStores: state.musicStores.filter(musicStore => musicStore.id !== action.id),
+         loading: false
        }
      case 'DELETE_INSTRUMENT':
        return {
          ...state,
-         instruments: state.instruments.filter(instrument => instrument.id !== action.id)
+         instruments: state.instruments.filter(instrument => instrument.id !== action.id),
+         loading: false
        }
      default:
       return state
