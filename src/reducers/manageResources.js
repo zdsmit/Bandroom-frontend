@@ -30,6 +30,12 @@ export default function ManageResources(state={ musicStores: [], instruments: []
          musicStores: [...state.musicStores, action.musicStore],
          loading: false
        }
+     case 'ADD_INSTRUMENTS':
+       return {
+         ...state,
+         instruments: [...state.instruments, action.instrument],
+         loading: false
+       }
      case 'DELETE_MUSIC_STORE':
        return {
          ...state,
