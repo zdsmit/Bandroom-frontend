@@ -46,9 +46,9 @@ class MusicStoreInput extends Component {
         <h3>Create a new music store!</h3>
         {/* input form contains inputs for all fields specified in the backend database's "stores" table (except instruments, which is handled separately on the frontend side) */}
         <form onSubmit={event => this.handleOnSubmit(event)}>
-          <input type="text" placeholder="Store's Name" onChange={this.handleNameChange}/><br/>
-          <input type="text" placeholder="Owner's Name" onChange={this.handleOwnerChange}/><br/>
-          <input type="text" placeholder="Store's Location" onChange={this.handleLocationChange}/><br/>
+          <input type="text" placeholder="Store's Name" onChange={this.handleNameChange} value={this.state.name}/><br/>
+          <input type="text" placeholder="Owner's Name" onChange={this.handleOwnerChange} value={this.state.owner}/><br/>
+          <input type="text" placeholder="Store's Location" onChange={this.handleLocationChange}value={this.state.location}/><br/>
           <input type="submit" value="submit"/>
         </form>
       </div>

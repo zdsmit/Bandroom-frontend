@@ -48,6 +48,21 @@ export default function ManageResources(state={ musicStores: [], instruments: []
          instruments: state.instruments.filter(instrument => instrument.id !== action.id),
          loading: false
        }
+     case 'ALPHABETIZE_MUSIC_STORES':
+       return {
+         ...state, 
+         musicStores: action.musicStores.sort((a, b) => {
+           let nameA = a.name.toUpperCase()
+           let nameB = b.name.toUpperCase()
+           if (nameA < nameB) {
+            return -1;
+           }
+           if (nameA > nameB) {
+            return 1;
+           }
+           return 0;
+         })
+       }
      default:
       return state
    }
