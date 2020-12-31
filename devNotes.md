@@ -87,3 +87,10 @@
 
 9/23 11:44 AM
   -Project should be ready for Learn assessment
+
+10/11 12:37 PM
+  -Preparing for second part of assessment
+  -The problem: was using "attributes" in payload request for addMusicStores, but missed that it was nested inside "data"
+
+10/15 12:48 PM
+  -For third part of assessment, need to figure out how to create 'alphabetize' button that rearranges the list of music stores 

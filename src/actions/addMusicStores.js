@@ -1,5 +1,5 @@
-export const addMusicStores = (dispatch) => {
-  return () => {
+export const addMusicStores = (data) => {
+  return (dispatch) => {
     fetch('http://127.0.0.1:3000/stores', {
       method: 'POST', 
       headers: {
@@ -7,15 +7,15 @@ export const addMusicStores = (dispatch) => {
         'Accept': 'application/json'
       },
       body: JSON.stringify({
-        name: dispatch.name,
-        owner: dispatch.owner,
-        location: dispatch.location
+        name: data.name,
+        owner: data.owner,
+        location: data.location
       })
     })
     .then(response => response.json())
     .then(responseJSON => {
-      console.log(responseJSON)
+      console.log(responseJSON.data.attributes)
+      dispatch({type: 'ADD_MUSIC_STORES', musicStore: responseJSON.data.attributes})
     })
   }
 }
-

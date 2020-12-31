@@ -1,5 +1,5 @@
-export const addInstruments = (dispatch) => {
-    return () => {
+export const addInstruments = (data) => {
+    return (dispatch) => {
       fetch('http://127.0.0.1:3000/instruments', {
         method: 'POST', 
         headers: {
@@ -7,13 +7,13 @@ export const addInstruments = (dispatch) => {
           'Accept': 'application/json'
         },
         body: JSON.stringify({
-          instrument_type: dispatch.type,
-          store_id: dispatch.storeId
+          instrument_type: data.type,
+          store_id: data.storeId
         })
       })
       .then(response => response.json())
       .then(responseJSON => {
-        console.log(responseJSON)
+        dispatch({type: 'ADD_INSTRUMENTS', instrument: responseJSON.data.attributes})
       })
     }
   }
